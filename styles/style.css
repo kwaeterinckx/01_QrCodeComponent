@@ -46,6 +46,7 @@ body {
         "footer footer footer";
     min-height: 100vh;
     font-family: var(--ff-text);
+    font-size: var(--fs-text);
     background-color: var(--clr-Slate-300);
 }
 
@@ -85,20 +86,37 @@ img {
 }
 
 .qrcode__text {
-    font-size: var(--fs-text);
     font-weight: var(--fw-text);
     line-height: var(--lh-text);
     letter-spacing: var(--ls-text);
     color: var(--clr-Slate-500);
 }
 
+/** FOOTER */
+
 .footer {
     grid-area: footer;
     margin-top: auto;
+    padding: 2rem 1rem;
+    background-color: var(--clr-Slate-900);
 }
 
 .footer__github,
 .footer__info {
     text-align: center;
-    color: var(--clr-Slate-900);
+    color: var(--clr-Slate-500);
+}
+
+.footer__github {
+    margin-bottom: 1rem;
+}
+
+.footer__link {
+    color: var(--clr-Slate-300);
+    text-decoration: none;
+}
+
+.footer__link:hover,
+.footer__link:focus-visible {
+    text-decoration: underline;
 }
